@@ -12,6 +12,6 @@ recipe 'sudo', 'Installs sudo and configures /etc/sudoers'
   supports os
 end
 
-source_url 'https://github.com/chef-cookbooks/sudo'
-issues_url 'https://github.com/chef-cookbooks/sudo/issues'
+source_url 'https://github.com/ROR-Chef/sudo' if respond_to?(:source_url)
+issues_url 'https://github.com/ROR-Chef/sudo/issues' if respond_to?(:issues_url)
 chef_version '>= 12.21.3' if respond_to?(:chef_version)
